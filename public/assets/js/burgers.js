@@ -27,7 +27,8 @@ $(function() {
 
     var newBurger = {
       name: $("#ca").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      //removed checked since this is now hidden and no longer an input
+      devoured: $("[name=devoured]").val().trim()
     };
 
     // Send the POST request.

@@ -51,6 +51,7 @@ var orm = {
     });
   },
   create: function(table, cols, vals, cb) {
+    //console.log("new burger"); -- works now
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
